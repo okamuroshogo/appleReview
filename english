@@ -88,10 +88,7 @@ Safari Extensions Development Guide
 App Store Connect Help
 Design Guidelines
 
-iOS Human Interface Guidelines
-macOS Human Interface Guidelines
-tvOS Human Interface Guidelines
-watchOS Human Interface Guidelines
+Human Interface Guidelines
 Brand and Marketing Guidelines
 
 Marketing Resources and Identity Guidelines
@@ -211,7 +208,7 @@ If you want to unlock features or functionality within your app, (by way of exam
 Apps may use in-app purchase currencies to enable customers to “tip” digital content providers in the app.
 Any credits or in-game currencies purchased via in-app purchase may not expire, and you should make sure you have a restore mechanism for any restorable in-app purchases.
 Remember to assign the correct purchasability type or your app will be rejected.
-Apps should not directly or indirectly enable gifting of in-app purchase content, features, or consumable items to others.
+Apps may enable gifting of items that are eligible for in-app purchase to others. Such gifts may only be refunded to the original purchaser and may not be exchanged.
 Apps distributed via the Mac App Store may host plug-ins or extensions that are enabled with mechanisms other than the App Store.
 Apps offering “loot boxes” or other mechanisms that provide randomized virtual items for purchase must disclose the odds of receiving each type of item to customers prior to purchase.
 Non-subscription apps may offer a free time-based trial period before presenting a full unlock option by setting up a Non-Consumable IAP item at Price Tier 0 that follows the naming convention: “XX-day Trial.” Prior to the start of the trial, your app must clearly identify its duration, the content or services that will no longer be accessible when the trial ends, and any downstream charges the user would need to pay for full functionality. Learn more about managing content access and the duration of the trial period using Receipts and Device Check.
@@ -347,7 +344,7 @@ Explain its data retention/deletion policies and describe how a user can revoke 
 (iv) Access Apps must respect the user’s permission settings and not attempt to manipulate, trick, or force people to consent to unnecessary data access. For example, apps that include the ability to post photos to a social network must not also require microphone access before allowing the user to upload photos. Where possible, provide alternative solutions for users who don’t grant consent. For example, if a user declines to share Location, offer the ability to manually enter an address.
 (v) Account Sign-In: If your app doesn’t include significant account-based features, let people use it without a log-in. Apps may not require users to enter personal information to function, except when directly relevant to the core functionality of the app or required by law. If your core app functionality is not related to a specific social network (e.g. Facebook, WeChat, Weibo, Twitter, etc.), you must provide access without a login or via another mechanism. Pulling basic profile information, sharing to the social network, or inviting friends to use the app are not considered core app functionality. The app must also include a mechanism to revoke social network credentials and disable data access between the app and social network from within the app. An app may not store credentials or tokens to social networks off of the device and may only use such credentials or tokens to directly connect to the social network from the app itself while the app is in use.
 (vi) Developers that use their apps to surreptitiously discover passwords or other private data will be removed from the Developer Program.
-(vii) SafariViewContoller must be used to visibly present information to users; the controller may not be hidden or obscured by other views or layers. Additionally, an app may not use SafariViewController to track users without their knowledge and consent.
+(vii) SafariViewController must be used to visibly present information to users; the controller may not be hidden or obscured by other views or layers. Additionally, an app may not use SafariViewController to track users without their knowledge and consent.
 5.1.2 Data Use and Sharing
 (i) Unless otherwise permitted by law, you may not use, transmit, or share someone’s personal data without first obtaining their permission. You must provide access to information about how and where the data will be used. Data collected from apps may only be shared with third parties to improve the app or serve advertising (in compliance with the Apple Developer Program License Agreement.). Apps that share user data without user consent or otherwise complying with data privacy laws may be removed from sale and may result in your removal from the Apple Developer Program.
 (ii) Data collected for one purpose may not be repurposed without further consent unless otherwise explicitly permitted by law.
@@ -396,7 +393,7 @@ Please treat everyone with respect, whether in your responses to App Store revie
 
 Customer trust is the cornerstone of the App Store’s success. Apps should never prey on users or attempt to rip-off customers, trick them into making unwanted purchases, force them to share unnecessary data, raise prices in a tricky manner, charge for features or content that are not delivered, or engage in any other manipulative practices within or outside of the app.
 
-Last Updated: 4 June 2018
+Last Updated: 19 December 2018
 
 After You Submit
 Once you’ve submitted your app and metadata in App Store Connect and you’re in the review process, here are some things to keep in mind:
