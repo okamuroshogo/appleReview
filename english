@@ -1,7 +1,26 @@
 App Store Review Guidelines
-Introduction
 Apps are changing the world, enriching people’s lives, and enabling developers like you to innovate like never before. As a result, the App Store has grown into an exciting and vibrant ecosystem for millions of developers and more than a billion users. Whether you are a first time developer or a large team of experienced programmers, we are excited that you are creating apps for the App Store and want to help you understand our guidelines so you can be confident your app will get through the review process quickly.
 
+Introduction
+Before You Submit
+1. Safety
+2. Performance
+3. Business
+4. Design
+5. Legal
+5.1 Privacy
+5.1.1 Data Collection and Storage
+5.1.2 Data Use and Sharing
+5.1.3 Health and Health Research
+5.1.4 Kids
+5.1.5 Location Services
+5.2 Intellectual Property
+5.3 Gaming, Gambling, and Lotteries
+5.4 VPN Apps
+5.5 Mobile Device Management
+5.6 Developer Code of Conduct
+After You Submit
+Introduction
 The guiding principle of the App Store is simple - we want to provide a safe experience for users to get apps and a great opportunity for all developers to be successful. We do this by offering a highly curated App Store where every app is reviewed by experts and an editorial team helps users discover new apps every day. For everything else there is always the open Internet. If the App Store model and guidelines are not best for your app or business idea that’s okay, we provide Safari for a great web experience too.
 
 On the following pages you will find our latest guidelines arranged into five clear sections: Safety, Performance, Business, Design, and Legal. The App Store is always changing and improving to keep up with the needs of our customers and our products. Your apps should change and improve as well in order to stay on the App Store.
@@ -15,62 +34,6 @@ If you attempt to cheat the system (for example, by trying to trick the review p
 You are responsible for making sure everything in your app complies with these guidelines, including ad networks, analytics services, and third-party SDKs, so review and choose them carefully.
 Some features and technologies that are not generally available to developers may be offered as an entitlement for limited use cases. For example, we offer entitlements for CarPlay Audio, HyperVisor, and Privileged File Operations. Review our documentation on developer.apple.com to learn more about entitlements.
 We hope these guidelines help you sail through the App Review process, and that approvals and rejections remain consistent across the board. This is a living document; new apps presenting new questions may result in new rules at any time. Perhaps your app will trigger this. We love this stuff too, and honor what you do. We’re really trying our best to create the best platform in the world for you to express your talents and make a living, too.
-
-Table of Contents
-Before You Submit – a pre-review checklist
-
-1. Safety
-
-1.1 Objectionable Content
-1.2 User Generated Content
-1.3 Kids Category
-1.4 Physical Harm
-1.5 Developer Information
-1.6 Data Security
-2. Performance
-
-2.1 App Completeness
-2.2 Beta Testing
-2.3 Accurate Metadata
-2.4 Hardware Compatibility
-2.5 Software Requirements
-3. Business
-
-3.1 Payments
-3.1.1 In-App Purchase
-3.1.2 Subscriptions
-3.1.3(a) “Reader” Apps
-3.1.3(b) Multiplatform Services
-3.1.4 Hardware-specific Content
-3.1.5 Goods and Services Outside of the App
-3.1.6 Apple Pay
-3.1.7 Advertising
-3.2 Other Business Model Issues
-3.2.1 Acceptable
-3.2.2 Unacceptable
-4. Design
-
-4.1 Copycats
-4.2 Minimum Functionality
-4.3 Spam
-4.4 Extensions
-4.5 Apple Sites and Services
-4.6 Alternate App Icons
-4.7 HTML5 Games, Bots, etc.
-5. Legal
-
-5.1 Privacy
-5.1.1 Data Collection and Storage
-5.1.2 Data Use and Sharing
-5.1.3 Health and Health Research
-5.1.4 Kids
-5.1.5 Location Services
-5.2 Intellectual Property
-5.3 Gaming, Gambling, and Lotteries
-5.4 VPN Apps
-5.5 Mobile Device Management
-5.6 Developer Code of Conduct
-After You Submit – what to expect
 
 Before You Submit
 To help your app approval go as smoothly as possible, review the common missteps listed below that can slow down the review process or trigger a rejection. This doesn’t replace the guidelines or guarantee approval, but making sure you can check every item on the list is a good start. If your app no longer functions as intended or you’re no longer actively supporting it, it will be removed from the App Store. Learn more about App Store Improvements.
@@ -90,7 +53,7 @@ App Programming Guide
 App Extension Programming Guide
 iOS Data Storage Guidelines
 macOS File System Documentation
-Safari Extensions Development Guide
+Safari App Extensions
 App Store Connect Help
 Design Guidelines
 
@@ -128,7 +91,7 @@ Apps with user-generated content or services that end up being used primarily fo
 1.3 Kids Category
 The Kids Category is a great way for people to easily find apps that are designed for children. If you want to participate in the Kids Category, you should focus on creating a great experience specifically for younger users. These apps must not include links out of the app, purchasing opportunities, or other distractions to kids unless reserved for a designated area behind a parental gate. Keep in mind that once customers expect your app to follow the Kids Category requirements, it will need to continue to meet these guidelines in subsequent updates, even if you decide to deselect the category. Learn more about parental gates.
 
-Apps in the Kids Category may not include third-party advertising or analytics. You should also pay particular attention to privacy laws around the world relating to the collection of data from children online. Be sure to review the Privacy section of these guidelines for more information.
+You must comply with applicable privacy laws around the world relating to the collection of data from children online. Be sure to review the Privacy section of these guidelines for more information. In addition, Kids Category apps may not send personally identifiable information or device information to third parties. Apps in the Kids Category should not include third-party analytics or third-party advertising. This provides a safer experience for kids. In limited cases, third-party analytics may be permitted provided that the services do not collect or transmit the IDFA or any identifiable information about children (such as name, date of birth, email address), their location, or their devices. This includes any device, network, or other information that could be used directly or combined with other information to identify users and their devices. Third-party contextual advertising may also be permitted in limited cases provided that the services have publicly documented practices and policies for Kids Category apps that include human review of ad creatives for age appropriateness.
 
 1.4 Physical Harm
 If your app behaves in a way that risks physical harm, we may reject it. For example:
@@ -246,7 +209,7 @@ The length of the renewal term and the fact that it will continue until canceled
 What will be provided during each period
 The actual charges that will be billed to the customer
 How to cancel
-3.1.7 Advertising: Ads displayed in an app must be appropriate for the app’s age rating, allow the user to see all information used to target them for that ad (without requiring the user to leave the app), and may not engage in targeted or behavioral advertising based on sensitive user data such as health/medical data (e.g. from the HealthKit APIs), school and classroom data (e.g. from ClassKit), or from kids (e.g. from apps in the Kids Category), etc. Interstitial ads or ads that interrupt or block the user experience must clearly indicate that they are an ad, must not manipulate or trick users into tapping into them, and must provide easily accessible and visible close/skip buttons large enough for people to easily dismiss the ad.
+: Ads displayed in an app must be appropriate for the app’s age rating, allow the user to see all information used to target them for that ad (without requiring the user to leave the app), and may not engage in targeted or behavioral advertising based on sensitive user data such as health/medical data (e.g. from the HealthKit APIs), school and classroom data (e.g. from ClassKit), or from kids (e.g. from apps in the Kids Category), etc. Interstitial ads or ads that interrupt or block the user experience must clearly indicate that they are an ad, must not manipulate or trick users into tapping into them, and must provide easily accessible and visible close/skip buttons large enough for people to easily dismiss the ad.
 3.2 Other Business Model Issues
 The lists below are not exhaustive, and your submission may trigger a change or update to our policies, but here are some additional do’s and don’ts to keep in mind:
 
@@ -297,7 +260,7 @@ Your app should include features, content, and UI that elevate it beyond a repac
 Don’t create multiple Bundle IDs of the same app. If your app has different versions for specific locations, sports teams, universities, etc., consider submitting a single app and provide the variations using in-app purchase. Also avoid piling on to a category that is already saturated; the App Store has enough fart, burp, flashlight, and Kama Sutra apps, etc. already. Spamming the store may lead to your removal from the Developer Program.
 
 4.4 Extensions
-Apps hosting or containing extensions must comply with the App Extension Programming Guide or the Safari Extensions Development Guide and should include some functionality, such as help screens and settings interfaces where possible. You should clearly and accurately disclose what extensions are made available in the app’s marketing text, and the extensions may not include marketing, advertising, or in-app purchases.
+Apps hosting or containing extensions must comply with the App Extension Programming Guide or the Safari App Extensions Guide and should include some functionality, such as help screens and settings interfaces where possible. You should clearly and accurately disclose what extensions are made available in the app’s marketing text, and the extensions may not include marketing, advertising, or in-app purchases.
 
 4.4.1 Keyboard extensions have some additional rules.
 They must:
@@ -328,7 +291,7 @@ Stickers are a great way to make Messages more dynamic and fun, letting people e
 (iii) Apps that access Apple Music user data, such as playlists and favorites, must clearly disclose this access in the purpose string. Any data collected may not be shared with third parties for any purpose other than supporting or improving the app experience. This data may not be used to identify users or devices, or to target advertising.
 4.5.3 Do not use Apple Services to spam, phish, or send unsolicited messages to customers, including Game Center, Push Notifications, etc. Do not attempt to reverse lookup, trace, relate, associate, mine, harvest, or otherwise exploit Player IDs, aliases, or other information obtained through Game Center, or you will be removed from the Developer Program.
 4.5.4 Push Notifications must not be required for the app to function, and should not be used for advertising, promotions, or direct marketing purposes or to send sensitive personal or confidential information. Abuse of these services may result in revocation of your privileges.
-4.5.5 Only use Game Center Player IDs in a manner approved by the Game Center terms and do not display them in the app or to any third-party.
+4.5.5 Only use Game Center Player IDs in a manner approved by the Game Center terms and do not display them in the app or to any third party.
 4.5.6 Apps may use Unicode characters that render as Apple emoji in their app and app metadata. Apple emoji may not be used on other platforms or embedded directly in your app binary.
 4.6 Alternate App Icons
 Apps may display customized icons, for example, to reflect a sports team preference, provided that each change is initiated by the user and the app includes settings to revert to the original icon. All icon variants must relate to the content of the app and changes should be consistent across all system assets, so that the icons displayed in Settings, Notifications, etc. match the new springboard icon. This feature may not be used for dynamic, automatic, or serial changes, such as to reflect up-to-date weather information, calendar notifications, etc.
@@ -336,6 +299,15 @@ Apps may display customized icons, for example, to reflect a sports team prefere
 4.7 HTML5 Games, Bots, etc.
 Apps may contain or run code that is not embedded in the binary (e.g. HTML5-based games, bots, etc.), as long as code distribution isn’t the main purpose of the app, the code is not offered in a store or store-like interface, and provided that the software (1) is free or purchased using in-app purchase; (2) only uses capabilities available in a standard WebKit view (e.g. it must open and run natively in Safari without modifications or additional software); your app must use WebKit and JavaScript Core to run third-party software and should not attempt to extend or expose native platform APIs to third-party software; (3) is offered by developers that have joined the Apple Developer Program and signed the Apple Developer Program License Agreement; (4) does not provide access to real money gaming, lotteries, or charitable donations; (5) adheres to the terms of these App Review Guidelines (e.g. does not include objectionable content); and (6) does not support digital commerce. Upon request, you must provide an index of software and metadata available in your app. It must include Apple Developer Program Team IDs for the providers of the software along with a URL which App Review can use to confirm that the software complies with the requirements above.
 
+4.8 Sign in with Apple
+Apps that exclusively use a third-party or social login service (such as Facebook Login, Google Sign-In, Sign in with Twitter, Sign In with Linked-In, Login with Amazon, or WeChat Login) to set up or authenticate the user’s primary account with the app must also offer Sign in with Apple as an equivalent option. A user’s primary account is the account they establish with your app for the purposes of identifying themselves, signing in, and accessing your features and associated services.
+
+Sign in with Apple is not required if:
+
+Your app exclusively uses your company’s own account setup and sign-in systems.
+Your app is an education, enterprise, or business app that requires the user to sign in with an existing education or enterprise account.
+Your app uses a government or industry-backed citizen identification system or electronic ID to authenticate users.
+Your app is a client for a specific third-party service and users are required to sign in to their mail, social media, or other third-party account directly to access their content.
 5. Legal
 Apps must comply with all legal requirements in any location where you make them available (if you’re not sure, check with a lawyer). We know this stuff is complicated, but it is your responsibility to understand and make sure your app conforms with all local laws, not just the guidelines below. And of course, apps that solicit, promote, or encourage criminal or clearly reckless behavior will be rejected. In extreme cases, such as apps that are found to facilitate human trafficking and/or the exploitation of children, appropriate authorities will be notified.
 
@@ -345,7 +317,7 @@ Protecting user privacy is paramount in the Apple ecosystem, and you should use 
 5.1.1 Data Collection and Storage
 (i) Privacy Policies: All apps must include a link to their privacy policy in the App Store Connect metadata field and within the app in an easily accessible manner. The privacy policy must clearly and explicitly:
 Identify what data, if any, the app/service collects, how it collects that data, and all uses of that data.
-Confirm that any third-party with whom an app shares user data (in compliance with these Guidelines) — such as analytics tools, advertising networks and third-party SDKs, as well as any parent, subsidiary or other related entities that will have access to user data — will provide the same or equal protection of user data as stated in the app’s privacy policy and required by these Guidelines.
+Confirm that any third party with whom an app shares user data (in compliance with these Guidelines) — such as analytics tools, advertising networks and third-party SDKs, as well as any parent, subsidiary or other related entities that will have access to user data — will provide the same or equal protection of user data as stated in the app’s privacy policy and required by these Guidelines.
 Explain its data retention/deletion policies and describe how a user can revoke consent and/or request deletion of the user’s data.
 (ii) Permission Apps that collect user or usage data must secure user consent for the collection, even if such data is considered to be anonymous at the time of or immediately following collection. Paid functionality must not be dependent on or require a user to grant access to this data. Apps must also provide the customer with an easily accessible and understandable way to withdraw consent. Ensure your purpose strings clearly and completely describe your use of the data. Apps that collect data for a legitimate interest without consent by relying on the terms of the European Union’s General Data Protection Regulation (“GDPR”) or similar statute must comply with all terms of that law. Learn more about Requesting Permission.
 (iii) Data Minimization: Apps should only request access to data relevant to the core functionality of the app and should only collect and use data that is required to accomplish the relevant task. Where possible, use the out-of-process picker or a share sheet rather than requesting full access to protected resources like Photos or Contacts.
@@ -370,13 +342,15 @@ Health, fitness, and medical data are especially sensitive and apps in this spac
 (iii) Apps conducting health-related human subject research must obtain consent from participants or, in the case of minors, their parent or guardian. Such consent must include the (a) nature, purpose, and duration of the research; (b) procedures, risks, and benefits to the participant; (c) information about confidentiality and handling of data (including any sharing with third parties); (d) a point of contact for participant questions; and (e) the withdrawal process.
 (iv) Apps conducting health-related human subject research must secure approval from an independent ethics review board. Proof of such approval must be provided upon request.
 5.1.4 Kids
-For many reasons, it is critical to use care when dealing with personal data from kids, and we encourage you to carefully review all the requirements for complying with laws like the Children’s Online Privacy Protection Act (“COPPA”), the European Union’s General Data Protection Regulation (“GDPR”), and any international or local equivalents.
+For many reasons, it is critical to use care when dealing with personal data from kids, and we encourage you to carefully review all the requirements for complying with laws like the Children’s Online Privacy Protection Act (“COPPA”), the European Union’s General Data Protection Regulation (“GDPR”), and any other applicable regulations or laws.
 
 Apps may ask for birthdate and parental contact information only for the purpose of complying with these statutes, but must include some useful functionality or entertainment value regardless of a person’s age.
 
-Apps intended for kids may not include third-party advertising or analytics.
+Apps intended primarily for kids should not include third-party analytics or third-party advertising. This provides a safer experience for kids. In limited cases, third-party analytics and third-party advertising may be permitted provided that the services adhere to the same terms set forth in Guideline 1.3.
 
-Moreover, apps in the Kids Category or those that collect, transmit, or have the capability to share personal information (e.g. name, address, email, location, photos, videos, drawings, the ability to chat, other personal data, or persistent identifiers used in combination with any of the above) from a minor must include a privacy policy and must comply with all applicable children’s privacy statutes. For the sake of clarity, the parental gate requirement for the Kid’s Category is generally not the same as securing parental consent to collect personal data under these privacy statutes. Collecting and transmitting data to third parties from apps in the Kids category is not allowed.
+Moreover, apps in the Kids Category or those that collect, transmit, or have the capability to share personal information (e.g. name, address, email, location, photos, videos, drawings, the ability to chat, other personal data, or persistent identifiers used in combination with any of the above) from a minor must include a privacy policy and must comply with all applicable children’s privacy statutes. For the sake of clarity, the parental gate requirement for the Kid’s Category is generally not the same as securing parental consent to collect personal data under these privacy statutes.
+
+As a reminder, Guideline 2.3.8 requires that use of terms like “For Kids” and “For Children” in app metadata is reserved for the Kids Category. Apps not in the Kids Category cannot include any terms in app name, subtitle, icon, screenshots or description that imply the main audience for the app is children.
 
 5.1.5 Location Services
 Use Location services in your app only when it is directly relevant to the features and services provided by the app. Location-based APIs shouldn’t be used to provide emergency services or autonomous control over vehicles, aircraft, and other devices, except for small devices such as lightweight drones and toys, or remote control car alarm systems, etc. Ensure that you notify and obtain consent before collecting, transmitting, or using location data. If your app uses location services, be sure to explain the purpose in your app; refer to the Human Interface Guidelines for best practices on doing so.
@@ -407,8 +381,6 @@ Please treat everyone with respect, whether in your responses to App Store revie
 
 Customer trust is the cornerstone of the App Store’s success. Apps should never prey on users or attempt to rip-off customers, trick them into making unwanted purchases, force them to share unnecessary data, raise prices in a tricky manner, charge for features or content that are not delivered, or engage in any other manipulative practices within or outside of the app.
 
-Last Updated: 3 June 2019
-
 After You Submit
 Once you’ve submitted your app and metadata in App Store Connect and you’re in the review process, here are some things to keep in mind:
 
@@ -418,3 +390,5 @@ Expedite Requests: If you have a critical timing issue, you can request an exped
 Release Date: If your release date is set for the future, the app will not appear on the App Store until that date, even if it is approved by App Review. And remember that it can take up to 24-hours for your app to appear on all selected storefronts.
 Rejections: Our goal is to apply these guidelines fairly and consistently, but nobody’s perfect. If your app has been rejected and you have questions or would like to provide additional information, please use the Resolution Center to communicate directly with the App Review team. This may help get your app on the store, and it can help us improve the App Review process or identify a need for clarity in our policies. If you still disagree with the outcome, please submit an appeal.
 We’re excited to see what you come up with next!
+
+Last Updated: 12 September 2019
